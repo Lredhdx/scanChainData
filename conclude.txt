@@ -1,0 +1,12 @@
+count20blocks:
+avgTxsGasPrice: 3311428612 medianTxsGasPrice: 3000000000 60%percentileTxsGasPrice: 3000000000
+
+count30blocks:
+avgTxsGasPrice: 3311428612 medianTxsGasPrice: 3000000000 60%percentileTxsGasPrice: 3000000000
+
+count40blocks:
+avgTxsGasPrice: 3950696279 medianTxsGasPrice: 3000000000 60%percentileTxsGasPrice: 3000000000
+
+count50blocks:
+avgTxsGasPrice: 3731483738 medianTxsGasPrice: 3000000000 60%percentileTxsGasPrice: 3000000000
+
