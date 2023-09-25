@@ -44,7 +44,7 @@ func main() {
 	}()
 	//wg.Wait()
 	//close(blockChan)
-	file, err := os.OpenFile("count50blocks.txt", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+	file, err := os.OpenFile("count50blocks0925.txt", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
 	if err != nil {
 		panic(err.Error())
 	}
