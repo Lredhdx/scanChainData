@@ -15,6 +15,7 @@ import (
 	"sort"
 	"sync"
 	"testing"
+	"time"
 )
 
 // receipt.EffectiveGasPrice == tx.gasPrice
@@ -284,5 +285,26 @@ func TestIssue5(t *testing.T) {
 	err = f.SaveAs("test.xlsx")
 	if err != nil {
 		fmt.Println(err)
+	}
+}
+
+func TestIssue6(t *testing.T) {
+	var queue list.List
+	count := 1
+	for queue.Len() < 20 {
+		queue.PushBack(count)
+		count++
+	}
+	for item := queue.Front(); item != nil; item = item.Next() {
+		fmt.Println("item ", item.Value)
+	}
+	//test := queue.Front()
+	//fmt.Println(test.Value)
+	for {
+		fmt.Println("count", queue.Front().Value)
+		queue.Remove(queue.Front())
+		queue.PushBack(count)
+		count++
+		time.Sleep(time.Second)
 	}
 }
